@@ -4,3 +4,25 @@
     <p class="lead">Signup here, it won't long</p>
   </div>
 </div>
+
+<!--SIGNUP FORM-->
+<div class="container">
+  <form>
+    <!--USERNAME-->
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10 col-lg-4">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" [(ngModel)]="formInfo.email" name="email">
+      </div>
+    </div>
+    <!--PASSWORD-->
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10 col-lg-4">
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Password" [(ngModel)]="formInfo.password" name="password">
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-secondary" (click)="signUp()">Sign-up</button>
+  </form>
+</div>
