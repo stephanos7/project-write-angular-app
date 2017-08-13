@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { appRouting } from './app.routing';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from "@angular/router";
+import { appRouting } from './app.routing';
+import { HttpModule } from "@angular/http";
+import 'rxjs/add/operator/map';
 
 // COMPONENTS
 import { AppComponent } from './app.component';
@@ -30,7 +33,9 @@ import { SessionService } from './services/session.service';
     BrowserModule,
     FormsModule,
     NgbModule.forRoot(),
-    appRouting
+    RouterModule,
+    appRouting,
+    HttpModule,
     
   ],
   providers: [SessionService],
