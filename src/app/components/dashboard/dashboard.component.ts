@@ -7,10 +7,13 @@ import { SessionService } from '../../services/session.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+user; 
 
-  constructor() { }
+  constructor(private session : SessionService) {}
 
   ngOnInit() {
+    this.user = this.session.user;
+    console.log("User we get from the session : ", this.user);
   }
 
 }
