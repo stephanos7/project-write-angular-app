@@ -24,6 +24,9 @@ export class LoginComponent {
   login() {
     this.session.login(this.user).subscribe(
       (data) => {
+        console.log("this is the data i expect when logging in: ", data);
+        console.log("this is the token i expect when logging in: ", data.token);
+        console.log("this is the user i expect when logging in: ", data.user);
         this.router.navigate(['dashboard']);
       },
       (err) => {

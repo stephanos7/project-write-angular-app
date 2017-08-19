@@ -29,7 +29,7 @@ export class SessionService implements CanActivate {
       let headers = new Headers({ 'Authorization': `JWT ${token}` });
       let options = new RequestOptions({ headers: headers });
 
-      return this.http.get(`${this.BASE_URL}/private`, options)
+      return this.http.get(`${this.BASE_URL}/dashboard`, options)
         .map((data) => {
           if (data) {
             this.isAuthenticated = true;
@@ -61,6 +61,7 @@ export class SessionService implements CanActivate {
             email: user.email
           }
           this.isAuthenticated = true;
+          localStorage.setItem('token', this.token);
         }
         
         return this.isAuthenticated;
@@ -69,7 +70,7 @@ export class SessionService implements CanActivate {
   }
 
 
-    signup(user) {
+  signup(user) {
     return this.http.post(`${this.BASE_URL}/signup`, user)
       .map(res => res.json())
       .catch(this.handleError);
