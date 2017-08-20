@@ -18,6 +18,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 
 // SERVICES
 import { SessionService } from './services/session.service';
+import { StoriesService } from './services/stories.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { SessionService } from './services/session.service';
     HomeComponent,
     SignupComponent,
     LoginComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
