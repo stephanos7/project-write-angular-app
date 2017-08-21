@@ -5,12 +5,12 @@ import { SessionService } from '../../services/session.service';
 import { StoriesService } from '../../services/stories.service';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css'],
+  selector: 'app-stories',
+  templateUrl: './stories.component.html',
+  styleUrls: ['./stories.component.css'],
   providers: [StoriesService]
 })
-export class DashboardComponent implements OnInit {
+export class StoriesComponent implements OnInit {
   user; 
   stories =[];
 

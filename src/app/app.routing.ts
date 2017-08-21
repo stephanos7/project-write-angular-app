@@ -2,7 +2,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // COMPONENTS
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { StoriesComponent } from './components/stories/stories.component';
 import { StoryComponent } from './components/story/story.component';
 import { HomeComponent } from './components/home/home.component';
 import { SignupComponent } from './components/signup/signup.component';
@@ -17,7 +17,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent},
     { path: 'signup', component: SignupComponent},
     { path: 'login', component: LoginComponent},
-    { path: 'dashboard', component: DashboardComponent, canActivate: [SessionService]},
+    { path: 'stories', component: StoriesComponent, canActivate: [SessionService]},
     { path: 'stories/:id', component: StoryComponent},
     { path: '**', component: NotFoundComponent}
 ];
