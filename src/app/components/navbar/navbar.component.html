@@ -16,15 +16,10 @@
         <a class="nav-link" href="#" routerLink="/dashboard">Dashboard</a>
       </li>
     </ul>
-    <!-- SEARCH FORM -->
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-    <!-- LOGIN BUTTON -->
-    <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="goToSignup()">Signup</button>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="goToLogin()">Login</button>
+    <!-- LOGIN & SIGNUP -->
+    <form>
+      <button type="submit" (click)="goToSignup()">Signup</button>
+      <button type="submit" (click)="goToLogin()">Login</button>
     </form>
   </div>
 </nav>

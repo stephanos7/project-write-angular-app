@@ -1,7 +1,8 @@
 <div class="container" *ngIf="user">
   <h6 class="display-3">Welcome to your dashboard, {{user.email}}</h6>
 </div>
-
-<ul class="list-group" *ngIf="stories">
-  <li class="list-group-item" *ngFor="let story of stories" [innerHTML]="story.title"></li>
-</ul>
+<div class="list-of-all-stories">
+  <ul *ngIf="stories">
+    <li *ngFor="let story of stories" [innerHTML]="story.title"></li>
+  </ul>
+</div>

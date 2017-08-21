@@ -1,0 +1,10 @@
+.list-of-all-stories ul {
+  list-style: none;
+}
+
+/* [XS] EXTRA-SMALL SCREEN SIZE */
+@media only screen and (max-width: 320px) {
+    div {
+      background-color: lightcoral;
+    }
+}

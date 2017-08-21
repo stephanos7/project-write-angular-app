@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from "@angular/router";
 import { appRouting } from './app.routing';
 import { HttpModule } from "@angular/http";
@@ -33,11 +32,9 @@ import { StoriesService } from './services/stories.service';
   imports: [
     BrowserModule,
     FormsModule,
-    NgbModule.forRoot(),
     RouterModule,
     appRouting,
     HttpModule,
-    
   ],
   providers: [SessionService],
   bootstrap: [AppComponent]
