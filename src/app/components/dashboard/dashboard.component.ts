@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser'
+
 import { SessionService } from '../../services/session.service';
 import { StoriesService } from '../../services/stories.service';
 
@@ -9,13 +11,12 @@ import { StoriesService } from '../../services/stories.service';
   providers: [StoriesService]
 })
 export class DashboardComponent implements OnInit {
-user; 
-stories =[];
-
+  user; 
+  stories =[];
 
   constructor(
     private session : SessionService,
-    private storiesService : StoriesService
+    private storiesService : StoriesService,
   ) {}
 
   ngOnInit() {

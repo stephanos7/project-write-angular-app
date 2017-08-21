@@ -3,8 +3,6 @@
 </div>
 <div class="list-of-all-stories">
   <ul *ngIf="stories">
-    <li *ngFor="let story of stories">
-      <div>{{story.title}}</div> 
-    </li>
+    <li *ngFor="let story of stories" [innerHTML]="story.title"></li>
   </ul>
 </div>
