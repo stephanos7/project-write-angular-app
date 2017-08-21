@@ -3,6 +3,12 @@
 }
 
 /* [XS] EXTRA-SMALL SCREEN SIZE */
-/*@media only screen and (max-width: 320px) {
-
-}*/
+@media only screen and (max-width: 320px) {
+ .list-of-all-stories ul li  {
+    padding-top: 5%;
+    height: 71px;
+    font-size: 0.7rem;
+    margin-left: 5%;
+    border-bottom: 1px solid lightgray;
+  }
+}
