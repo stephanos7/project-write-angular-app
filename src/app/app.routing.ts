@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 // COMPONENTS
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { StoryComponent } from './components/story/story.component';
 import { HomeComponent } from './components/home/home.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { LoginComponent } from './components/login/login.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
     { path: 'signup', component: SignupComponent},
     { path: 'login', component: LoginComponent},
     { path: 'dashboard', component: DashboardComponent, canActivate: [SessionService]},
+    { path: 'stories/:id', component: StoryComponent},
     { path: '**', component: NotFoundComponent}
 ];
 

@@ -1,5 +1,5 @@
-<div class="container" *ngIf="user">
-  <h6 class="display-3">Welcome to your dashboard, {{user.email}}</h6>
+<div *ngIf="user">
+  <h6>Welcome, {{user.email}}</h6>
 </div>
 <div class="list-of-all-stories">
   <ul *ngIf="stories">
