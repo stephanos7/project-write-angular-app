@@ -4,7 +4,7 @@
 
 /* [XS] EXTRA-SMALL SCREEN SIZE */
 @media only screen and (max-width: 320px) {
-    div {
-      background-color: lightcoral;
+    .list-of-all-stories ul {
+      /*font-size: 8px;*/
     }
 }
